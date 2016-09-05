@@ -1,0 +1,22 @@
+[
+    {
+        "operation": "modify-default-beta",
+        "spec": {
+           "INSTANCEID" : "=concat(@(1,InstanceId))",
+           "ERRORTEXT" : "DUMMY"
+        }
+    },
+    {
+        "operation": "snippet.SampleTransform",
+        "spec": {
+          "INSTANCEIDD" : "/json/sample/transform.json"
+        }
+    },
+    {
+        "operation": "remove",
+        "spec": {
+            "errorCode" : "",
+            "InstanceId": ""
+        }
+    }
+]
